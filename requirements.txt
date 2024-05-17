@@ -1,2 +1,3 @@
-date
-random
+requests
+numpy
+pandas
