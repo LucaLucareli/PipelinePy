@@ -2,9 +2,11 @@ name: main
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   run_script:
@@ -17,7 +19,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.10' 
+        python-version: '3.10'  # Use a versão do Python que você deseja usar
 
     - name: Install dependencies
       run: |
